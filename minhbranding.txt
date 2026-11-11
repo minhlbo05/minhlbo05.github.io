@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lê Bảo Minh - Life is hard. Let's make it fun.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+            color: #1f1f1f;
+            overflow-x: hidden;
+        }
+        .font-mono {
+            font-family: 'Space Mono', monospace;
+        }
+        .text-gray-custom { color: #6b7280; }
+        .bg-gray-custom { background-color: #f4f4f5; }
+        
+        /* Animations cho emoji bay lung tung */
+        @keyframes float-1 {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            50% { transform: translate(10px, -20px) rotate(8deg); }
+            100% { transform: translate(0, 0) rotate(0deg); }
+        }
+        @keyframes float-2 {
+            0% { transform: translate(0, 0) rotate(-5deg); }
+            50% { transform: translate(-15px, 15px) rotate(5deg); }
+            100% { transform: translate(0, 0) rotate(-5deg); }
+        }
+        @keyframes float-3 {
+            0% { transform: translate(0, 0) rotate(5deg); }
+            50% { transform: translate(15px, 10px) rotate(-8deg); }
+            100% { transform: translate(0, 0) rotate(5deg); }
+        }
+
+        .float-1 { animation: float-1 6s ease-in-out infinite; }
+        .float-2 { animation: float-2 8s ease-in-out infinite; }
+        .float-3 { animation: float-3 7s ease-in-out infinite; }
+
+        .highlight {
+            background: linear-gradient(180deg, transparent 65%, #d1d5db 65%);
+            padding: 0 4px;
+        }
+        .section-divider {
+            border-top: 1px solid #e5e7eb;
+        }
+    </style>
+</head>
+<body class="antialiased relative">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="font-mono font-bold text-lg">minhlb.</div>
+            <div class="hidden md:flex space-x-6 text-sm font-medium text-gray-500">
+                <a href="#about" class="hover:text-black transition">Đánh giá bản thân</a>
+                <a href="#goals" class="hover:text-black transition">Mục tiêu</a>
+                <a href="#position" class="hover:text-black transition">Định vị</a>
+                <a href="#plan" class="hover:text-black transition">Kế hoạch</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="min-h-screen flex flex-col justify-center px-6 md:px-12 relative">
+        <div class="absolute top-24 left-[15%] text-6xl float-1 opacity-80">🧠</div>
+        <div class="absolute top-40 right-[10%] text-5xl float-2 opacity-80">🚀</div>
+        <div class="absolute bottom-40 left-[25%] text-7xl float-3 opacity-80">✨</div>
+        <div class="absolute bottom-24 right-[20%] text-6xl float-1 opacity-80">😎</div>
+
+        <div class="max-w-5xl mx-auto w-full z-10">
+            <p class="font-mono text-sm mb-4 text-gray-500">// Xin chào, mình là</p>
+            
+            <h1 class="text-7xl md:text-9xl font-black tracking-tighter leading-none mb-8" style="transform: rotate(-2deg);">
+                Lê Bảo Minh
+            </h1>
+            
+            <div class="relative inline-block mb-12">
+                <h2 class="text-3xl md:text-5xl font-bold text-gray-800" style="transform: rotate(1deg);">
+                    Life is hard. Let's make it fun.
+                </h2>
+                <span class="absolute -top-6 -right-8 text-3xl float-2">🙃</span>
+            </div>
+
+            <p class="text-lg md:text-xl font-light max-w-2xl text-gray-600 leading-relaxed">
+                Sinh viên năm 4 Quản trị Marketing @ NEU. 
+                Mục tiêu là xây dựng hình ảnh một người trẻ có năng lực chuyên môn, tư duy chiến lược, nhưng vẫn giữ được sự hài hước, tích cực và gần gũi trong cuộc sống.
+            </p>
+        </div>
+        
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 text-2xl animate-bounce">⬇️</div>
+    </header>
+
+    <!-- I. ĐÁNH GIÁ BẢN THÂN -->
+    <section id="about" class="py-24 px-6 md:px-12 relative section-divider">
+        <div class="max-w-4xl mx-auto relative">
+            <div class="absolute -top-10 right-5 text-5xl float-3">🧘‍♂️</div>
+            <h3 class="font-mono text-sm text-gray-400 mb-4">// PHẦN I. ĐÁNH GIÁ BẢN THÂN</h3>
+            
+            <div class="space-y-12 mt-12">
+                <!-- 1. Bạn là người như thế nào -->
+                <div>
+                    <h4 class="text-2xl font-bold mb-4 flex items-center gap-2">1. Bạn là người như thế nào? <span class="text-3xl float-1">🤔</span></h4>
+                    <div class="space-y-4 text-lg text-gray-700 font-light leading-relaxed pl-4 border-l-2 border-gray-200">
+                        <p>Mình là người khá cởi mở, linh hoạt và có xu hướng nhìn nhận mọi việc theo hướng tích cực. Cuộc sống vốn nhiều áp lực, thay vì quá nghiêm trọng hóa, mình thường giữ tinh thần thoải mái, tận hưởng những điều đang có và tìm niềm vui trong trải nghiệm thường ngày.</p>
+                        <p>Trong công việc, mình quan tâm đến bức tranh tổng thể, thích nhìn nhận vấn đề trong mối liên hệ nhiều yếu tố. Mình thích có không gian tự suy nghĩ, chủ động giải quyết công việc. Tuy nhiên, khi làm nhóm luôn hướng tới mục tiêu chung, quan tâm kết quả tập thể và sẵn sàng hỗ trợ.</p>
+                        <p>Mình không phải người lúc nào cũng nghiêm túc hay khuôn mẫu. Thích sự tự nhiên, thoải mái và không ngại nhìn nhận khía cạnh hài hước. 😏</p>
+                    </div>
+                </div>
+
+                <!-- 2. Người khác nhìn nhận -->
+                <div class="text-right md:text-left">
+                    <h4 class="text-2xl font-bold mb-4 flex items-center gap-2 md:justify-end">2. Người khác nhìn nhận bạn thế nào? <span class="text-3xl float-2">👀</span></h4>
+                    <div class="space-y-4 text-lg text-gray-700 font-light leading-relaxed md:pl-4 md:border-l-2 md:border-gray-200">
+                        <p>Mình thường được nhận xét là vui vẻ, hài hước, linh hoạt và khá thú vị. Dễ tạo không khí thoải mái và dễ thích nghi với các môi trường, nhóm người khác nhau.</p>
+                        <p>Trong nhóm, mọi người thấy mình có chính kiến, quan tâm kết quả chung, mong muốn nhóm đạt mục tiêu tốt nhất. Dù thích làm độc lập, mình không đặt lợi ích cá nhân lên trên tập thể, sẵn sàng lắng nghe và phối hợp.</p>
+                        <p>Hình ảnh mình muốn duy trì là người dễ gần, chân thành, có năng lượng tích cực, mang lại cảm giác thoải mái khi làm việc cùng. 🤝</p>
+                    </div>
+                </div>
+
+                <!-- 3. Điểm mạnh / Yếu -->
+                <div>
+                    <h4 class="text-2xl font-bold mb-6">3. Điểm mạnh và điểm cần cải thiện</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="relative">
+                            <span class="absolute -top-8 -left-2 text-3xl float-1">💪</span>
+                            <h5 class="font-mono font-bold mb-3 text-gray-500">ĐIỂM MẠNH</h5>
+                            <ul class="space-y-3 text-base text-gray-700 font-light">
+                                <li><span class="font-semibold">Tư duy tổng thể:</span> Nhìn nhận đa khía cạnh, kết nối yếu tố, tìm hướng giải quyết chung.</li>
+                                <li><span class="font-semibold">Sự linh hoạt:</span> Thích nghi với môi trường, tình huống, yêu cầu công việc khác nhau.</li>
+                                <li><span class="font-semibold">Tinh thần tích cực:</span> Giữ thái độ lạc quan, không dễ bị khó khăn ảnh hưởng.</li>
+                                <li><span class="font-semibold">Độc lập & Phối hợp:</span> Chủ động xử lý nhưng quan tâm mục tiêu và hiệu quả chung.</li>
+                            </ul>
+                        </div>
+                        <div class="relative">
+                            <span class="absolute -top-8 -right-2 text-3xl float-2">🛠️</span>
+                            <h5 class="font-mono font-bold mb-3 text-gray-500">CẦN CẢI THIỆN</h5>
+                            <ul class="space-y-3 text-base text-gray-700 font-light">
+                                <li>Tập trung tổng thể đôi khi thiếu chú ý chi tiết nhỏ trong quá trình thực hiện.</li>
+                                <li>Linh hoạt khiến chưa duy trì được tính kỷ luật và kế hoạch nhất quán trong mọi tình huống.</li>
+                                <li>Cần chủ động hệ thống hóa kiến thức và đào sâu chuyên môn thay vì chỉ hiểu diện rộng.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Kinh nghiệm & Thành tựu -->
+                <div>
+                    <h4 class="text-2xl font-bold mb-4">4. Kỹ năng và thành tựu nổi bật <span class="text-3xl float-3">🏆</span></h4>
+                    <div class="mt-6 space-y-6">
+                        <div>
+                            <p class="font-bold text-xl mb-1">Social Trainee @ Zee Agency</p>
+                            <p class="text-gray-600 font-light leading-relaxed">
+                                Tiếp cận bài toán truyền thông thực tế, hiểu cách thương hiệu kết nối người tiêu dùng. Cơ hội tiếp xúc các nhãn hàng lớn:
+                                <span class="highlight font-medium">Cetaphil</span>, 
+                                <span class="highlight font-medium">Vaseline</span>, 
+                                <span class="highlight font-medium">X-Men for Boss</span>, 
+                                <span class="highlight font-medium">Milo</span>. 🛒
+                            </p>
+                        </div>
+                        <div>
+                            <p class="font-bold text-xl mb-2">Thành tích Case Study</p>
+                            <div class="flex flex-wrap gap-3 text-base">
+                                <span class="bg-gray-custom px-3 py-1 rounded-full">🎯 Top 6 MASC</span>
+                                <span class="bg-gray-custom px-3 py-1 rounded-full">🎯 Top 5 The Disruptor</span>
+                                <span class="bg-gray-custom px-3 py-1 rounded-full">🎯 Top 22 Marketing On Air</span>
+                            </div>
+                            <p class="text-gray-600 font-light mt-3">Giúp rèn luyện tư duy phân tích, xây dựng chiến lược và tiếp cận vấn đề có hệ thống.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Nếu tiền không phải vấn đề -->
+                <div class="py-8">
+                    <h4 class="text-3xl font-extrabold mb-6 text-center tracking-tight">5. Nếu tiền không phải là vấn đề... <span class="text-4xl float-1">💸</span></h4>
+                    <div class="max-w-2xl mx-auto text-center space-y-5 text-lg text-gray-700 font-light leading-relaxed">
+                        <p>Mình muốn trở thành một <span class="font-bold text-black">Travel Vlogger</span> 🎥, đi đến vùng đất mới, khám phá văn hóa và gặp gỡ con người.</p>
+                        <p>Yêu thích cách Khoai Lang Thang làm nội dung. Điều thú vị không chỉ là địa điểm đẹp hay món ăn ngon, mà là câu chuyện về con người, phong tục, đời sống bản địa. Muốn trải nghiệm và kể lại câu chuyện đó, mở rộng thế giới quan và giúp người xem hiểu hơn về vùng đất họ chưa từng đặt chân. 🎒</p>
+                        <p>Bên cạnh đó, muốn làm việc trong <span class="font-bold text-black">lĩnh vực giáo dục</span> 👨‍🏫. ước mơ trở thành người giảng dạy Marketing, chia sẻ kiến thức giúp người khác hiểu về ngành, phát triển tư duy và tìm hướng đi phù hợp.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- II. MỤC TIÊU & III. ĐỐI TƯỢNG -->
+    <section id="goals" class="py-24 px-6 md:px-12 bg-gray-custom relative section-divider">
+        <div class="absolute top-10 left-1/4 text-6xl float-2 opacity-40">🎯</div>
+        <div class="absolute bottom-20 right-1/4 text-5xl float-3 opacity-40">🌱</div>
+
+        <div class="max-w-4xl mx-auto relative z-10">
+            <h3 class="font-mono text-sm text-gray-500 mb-12">// PHẦN II & III. MỤC TIÊU VÀ ĐỐI TƯỢNG</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Ngắn hạn ⏳</h4>
+                    <ul class="space-y-3 text-gray-700 font-light">
+                        <li class="flex gap-2"><span>⚡</span> Phát triển chuyên môn: Strategic Planning, Creative Planning, Branding.</li>
+                        <li class="flex gap-2"><span>⚡</span> Xây dựng hình ảnh cá nhân có định hướng rõ ràng trên trực tuyến.</li>
+                        <li class="flex gap-2"><span>⚡</span> Mở rộng kết nối với người làm Marketing và lĩnh vực sáng tạo.</li>
+                        <li class="flex gap-2"><span>⚡</span> Hoàn thiện portfolio, cập nhật dự án & thành tích.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Dài hạn 🌟</h4>
+                    <ul class="space-y-3 text-gray-700 font-light">
+                        <li class="flex gap-2"><span>🚀</span> Marketer chuyên môn vững, tư duy độc lập, tạo giá trị thực tế.</li>
+                        <li class="flex gap-2"><span>🚀</span> Tự chủ tài chính, cuộc sống đủ đầy, nhiều lựa chọn.</li>
+                        <li class="flex gap-2"><span>🚀</span> Khám phá vùng đất, trải nghiệm văn hóa, chia sẻ câu chuyện.</li>
+                        <li class="flex gap-2"><span>🚀</span> Tham gia giáo dục, giảng dạy và chia sẻ kiến thức Marketing.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-300 pt-12">
+                <h4 class="text-xl font-bold mb-8">Đối tượng tiếp cận & Kỳ vọng 🎯</h4>
+                <div class="space-y-6">
+                    <div class="flex flex-col md:flex-row gap-4 items-start">
+                        <div class="text-4xl float-1">👔</div>
+                        <div>
+                            <p class="font-bold text-lg">Nhà tuyển dụng & Người làm Marketing</p>
+                            <p class="text-gray-600 font-light">Marketing Manager, Planner, Account... Kỳ vọng: Thấy được năng lực chuyên môn, tư duy giải quyết vấn đề, kinh nghiệm và thái độ nghiêm túc.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-4 items-start">
+                        <div class="text-4xl float-2">🧠</div>
+                        <div>
+                            <p class="font-bold text-lg">Người trẻ có cùng quan tâm</p>
+                            <p class="text-gray-600 font-light">Sinh viên, người mới bắt đầu sự nghiệp. Kỳ vọng: Tiếp cận kiến thức, góc nhìn, kinh nghiệm thực tế để ứng dụng học tập/công việc.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-4 items-start">
+                        <div class="text-4xl float-3">🌍</div>
+                        <div>
+                            <p class="font-bold text-lg">Cộng đồng yêu thích du lịch</p>
+                            <p class="text-gray-600 font-light">Người quan tâm văn hóa, con người, câu chuyện đời thường. Kỳ vọng: Khám phá vùng đất mới qua nội dung gần gũi, chân thực.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- IV. ĐỊNH VỊ THƯƠNG HIỆU -->
+    <section id="position" class="py-24 px-6 md:px-12 relative section-divider">
+        <div class="absolute top-20 right-10 text-6xl float-1 opacity-30">🎨</div>
+        <div class="max-w-4xl mx-auto relative z-10">
+            <h3 class="font-mono text-sm text-gray-400 mb-12">// PHẦN IV. ĐỊNH VỊ THƯƠNG HIỆU</h3>
+
+            <div class="space-y-10 text-lg text-gray-700 font-light leading-relaxed">
+                <p>Mình muốn được nhớ đến như một người trẻ làm Marketing có <span class="highlight font-medium text-black">tư duy chiến lược, sáng tạo, linh hoạt</span> nhưng vẫn giữ được sự hài hước, tích cực và gần gũi.</p>
+                
+                <p>Có tham vọng trong sự nghiệp, muốn đạt tự chủ tài chính, kiếm nhiều tiền. Nhưng <span class="italic">không muốn thành công thể hiện bằng đồ đắt tiền hay hào nhoáng</span>. Một cuộc sống tốt là có đủ năng lực theo đuổi mục tiêu lớn, nhưng vẫn vui vẻ với điều giản dị. Vừa nghiêm túc công việc, vừa tận hưởng cuộc sống. 🍻</p>
+                
+                <div class="bg-gray-custom p-8 rounded-lg border border-gray-200">
+                    <p class="font-mono text-sm text-gray-500 mb-2">THÔNG ĐIỆP CỐT LÕI</p>
+                    <p class="text-3xl font-extrabold text-black tracking-tight">"Life is hard. Let's make it fun."</p>
+                    <p class="mt-4 text-gray-600">Cuộc sống vốn khó, hãy sống vui một chút. Theo đuổi mục tiêu lớn, không ngừng phát triển, nhưng vẫn giữ sự hài hước, tận hưởng điều giản dị và tìm niềm vui trong hiện tại.</p>
+                </div>
+            </div>
+
+            <!-- V. NHẬN DIỆN -->
+            <div class="mt-20">
+                <h3 class="font-mono text-sm text-gray-400 mb-8">// PHẦN V. NHẬN DIỆN</h3>
+                <div class="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16 mb-10">
+                    <div class="text-center">
+                        <span class="text-6xl block mb-2 float-1">⚪</span>
+                        <h4 class="text-3xl font-black uppercase">Simple</h4>
+                        <p class="text-sm text-gray-500 mt-1 max-w-[150px]">Đơn giản, tự nhiên, định hướng rõ ràng.</p>
+                    </div>
+                    <div class="text-center md:mt-10">
+                        <span class="text-6xl block mb-2 float-2">😏</span>
+                        <h4 class="text-3xl font-black uppercase italic">Witty</h4>
+                        <p class="text-sm text-gray-500 mt-1 max-w-[150px]">Hài hước, linh hoạt, góc nhìn thú vị.</p>
+                    </div>
+                    <div class="text-center">
+                        <span class="text-6xl block mb-2 float-3">🎯</span>
+                        <h4 class="text-3xl font-black uppercase">Ambitious</h4>
+                        <p class="text-sm text-gray-500 mt-1 max-w-[150px]">Tham vọng, phát triển không ngừng.</p>
+                    </div>
+                </div>
+                <p class="text-center text-gray-600 max-w-2xl mx-auto font-light">
+                    Nội dung xoay quanh Marketing/Nghề nghiệp và Cuộc sống/Trải nghiệm. Tự nhiên, gần gũi, có chút hài hước nhưng không mất chuyên nghiệp.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- VI. KẾ HOẠCH HÀNH ĐỘNG -->
+    <section id="plan" class="py-24 px-6 md:px-12 bg-black text-white relative">
+        <div class="absolute top-10 left-10 text-5xl float-2 opacity-20">📅</div>
+        <div class="absolute bottom-10 right-10 text-5xl float-1 opacity-20">🚀</div>
+
+        <div class="max-w-4xl mx-auto relative z-10">
+            <h3 class="font-mono text-sm text-gray-500 mb-12">// PHẦN VI. KẾ HOẠCH HÀNH ĐỘNG</h3>
+
+            <div class="space-y-12 font-light">
+                <!-- Hiện diện trực tuyến -->
+                <div>
+                    <h4 class="text-2xl font-bold mb-4 text-gray-300">1. Sự hiện diện trực tuyến</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="border-l-2 border-gray-700 pl-6">
+                            <p class="font-bold text-xl flex items-center gap-2">📱 Threads</p>
+                            <p class="text-gray-400 mt-2">Nơi thể hiện góc nhìn, cá tính cá nhân. Chia sẻ quan điểm Marketing, quan sát công việc, chuyện đời thường. Tạo trao đổi tự nhiên thay vì kiến thức một chiều.</p>
+                        </div>
+                        <div class="border-l-2 border-gray-700 pl-6">
+                            <p class="font-bold text-xl flex items-center gap-2">💼 LinkedIn</p>
+                            <p class="text-gray-400 mt-2">Xây dựng hình ảnh chuyên nghiệp. Cập nhật kinh nghiệm, dự án, portfolio. Phát triển nội dung chuyên sâu, chia sẻ bài học từ quá trình làm việc và thi cử.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phát triển -->
+                <div>
+                    <h4 class="text-2xl font-bold mb-4 text-gray-300">2. Phát triển thương hiệu</h4>
+                    <ul class="space-y-4 text-gray-400">
+                        <li><span class="text-white font-bold mr-2">Năng lực:</span> Tích lũy thực tế, đào sâu Strategic/Creative Planning & Branding, tham gia Case Study, hệ thống hóa Portfolio.</li>
+                        <li><span class="text-white font-bold mr-2">Nội dung:</span> Duy trì Threads, cập nhật LinkedIn, cân bằng chuyên nghiệp/gần gũi, thử nghiệm nội dung du lịch/văn hóa.</li>
+                        <li><span class="text-white font-bold mr-2">Kết nối:</span> Mở rộng mạng lưới Marketing/Sáng tạo, tham gia cộng đồng, hỗ trợ bạn trẻ, tìm cơ hội giáo dục.</li>
+                    </ul>
+                </div>
+
+                <!-- Đánh giá -->
+                <div>
+                    <h4 class="text-2xl font-bold mb-4 text-gray-300">3. Đánh giá hiệu quả</h4>
+                    <p class="text-gray-500 mb-4">Dựa trên phát triển năng lực, nhận diện, kết nối thay vì chỉ số tương tác mạng xã hội.</p>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-gray-800 px-3 py-1 rounded-full text-sm">📈 Năng lực chuyên môn</span>
+                        <span class="bg-gray-800 px-3 py-1 rounded-full text-sm">🌐 Hiện diện trực tuyến</span>
+                        <span class="bg-gray-800 px-3 py-1 rounded-full text-sm">👁️ Nhận diện cá nhân</span>
+                        <span class="bg-gray-800 px-3 py-1 rounded-full text-sm">🤝 Cơ hội phát triển</span>
+                        <span class="bg-gray-800 px-3 py-1 rounded-full text-sm">💖 Giá trị cộng đồng</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tổng kết & Footer -->
+    <footer class="py-24 px-6 text-center relative">
+        <div class="absolute top-10 left-1/2 -translate-x-1/2 text-5xl float-1">🤝</div>
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-5xl md:text-6xl font-black mb-6 tracking-tighter">Life is hard.<br>Let's make it fun.</h2>
+            <div class="flex flex-wrap justify-center gap-4 mb-12 text-gray-500 font-light">
+                <span class="border border-gray-200 px-4 py-1 rounded-full">Simple</span>
+                <span class="border border-gray-200 px-4 py-1 rounded-full">Witty</span>
+                <span class="border border-gray-200 px-4 py-1 rounded-full">Ambitious</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
